@@ -43,24 +43,43 @@ button{
 ul li{
     margin-top: 15px;
     font-size: 17px;
-    list-style: none;
+   
     margin-left: 15px;
     position: relative;
+    
 }
+
 
 ul li::before{
     content: ' ';
     position: absolute;
-    top: 0;
-    left: 0;
+    
     height: 28px;
     width: 28px;
-    border-radius: 50px;
-    background-image: url(imagestodolist/unchecked.png);
 }
-
+   
 ul li.checked{
-
     color: #555;
     text-decoration: line-through;
+
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+ul li span:hover {
+    background-color: #78579b;
+    color: white;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO-DO-LIST</title>
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
     <div class="container">
@@ -14,10 +15,10 @@
         </center>
         
         <input type="text" id="one" placeholder="Add your task">
-        <button>Add</button>
+        <button onclick="addTask();">Add</button>
 
-        <ul style="padding-left: 35px;margin-top: 15px;">
-            <li class="checked" >Task 1</li>
+        <ul style="padding-left: 25px;"id="list-container">
+            <!--<li class="checked" >Task 1</li>
             <li>Task 2</li>
             <li>Task 3</li>
             <li>Task 4</li>
@@ -26,13 +27,14 @@
             <li>Task 7</li>
             <li>Task 8</li>
             <li>Task 9</li>
-            <li>Task 10</li>
+            <li>Task 10</li>-->
            
 
         </ul>
         
 
     </div>
+    <script src="script.js"></script>
     
 </body>
 </html>
